@@ -68,10 +68,10 @@ body {
   overflow-x: hidden;
   background-color: $color-very-dark-blue;
 
-  
-  
-  
-  
+
+
+
+
 
 }
 
@@ -86,9 +86,16 @@ body {
 
 .profile-card {
   background-color: $color-blue;
-  padding: 5rem;
+  // padding: 5rem;
   border-radius: 1.2rem;
   position: relative;
+  // width: 25rem;
+  padding: 3rem;
+  width: 26rem;
+  height: 35rem;
+  
+  
+  
 
   &__name {
     font-size: 3.4rem;
@@ -97,18 +104,18 @@ body {
     line-height: 4rem;
   }
 
-  
+
 
   &__picture {
     margin-bottom: 2.5rem;
-   
+
   }
 
   &__img {
     border-radius: 50%;
-    border: 5px solid white;
-    width: 35%;
-    
+    border: 2px solid white;
+    width: 45%;
+
   }
 
   &__time-period {
@@ -116,19 +123,89 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    padding: 5rem;
-    margin-top:3rem;
+    height: 20rem;
+    margin-top: 3rem;
     z-index: -1;
     border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
     
-        
+
+
+
+
   }
 
-  &__time-period li {
+  &__list {
     list-style: none;
     margin-bottom: 2.2rem;
+    display: flex;
+    flex-direction: column; 
+    margin-top: 9rem;
+    margin-left: 2rem;
+    
+
+    
   }
+
+  &__list-item:not(:first-child) {
+    margin-top: 1rem;
+
+    
+  }
+
+
+  &__link {
+    
+    
+    &:link,
+    &:visited {
+      
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+
+
+  // &__time-period ul {
+  //   list-style: none;
+  //   margin-bottom: 2.2rem;
+  //   display: flex;
+  //   flex-direction: column; 
+  //   margin-top: 4.5rem;
+  //   margin-left: 2rem;
+
+
+
+
+
+  // }
+
+  // &__time-period li {
+  //   padding: .5rem;
+
+
+
+  // }
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 small {
   font-size: 1.5rem;

@@ -26,9 +26,11 @@ body {
 
 .profile-card {
   background-color: #5847eb;
-  padding: 5rem;
   border-radius: 1.2rem;
-  position: relative; }
+  position: relative;
+  padding: 3rem;
+  width: 26rem;
+  height: 35rem; }
   .profile-card__name {
     font-size: 3.4rem;
     font-weight: 400;
@@ -38,20 +40,32 @@ body {
     margin-bottom: 2.5rem; }
   .profile-card__img {
     border-radius: 50%;
-    border: 5px solid white;
-    width: 35%; }
+    border: 2px solid white;
+    width: 45%; }
   .profile-card__time-period {
     background-color: #1c1f4a;
     position: absolute;
     left: 0;
     right: 0;
-    padding: 5rem;
+    height: 20rem;
     margin-top: 3rem;
     z-index: -1;
-    border-radius: 1.2rem; }
-  .profile-card__time-period li {
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column; }
+  .profile-card__list {
     list-style: none;
-    margin-bottom: 2.2rem; }
+    margin-bottom: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 9rem;
+    margin-left: 2rem; }
+  .profile-card__list-item:not(:first-child) {
+    margin-top: 1rem; }
+  .profile-card__link:link, .profile-card__link:visited {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer; }
 
 small {
   font-size: 1.5rem;
