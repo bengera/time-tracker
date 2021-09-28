@@ -29,11 +29,17 @@ body {
   padding: 5rem;
   border-radius: 1.2rem;
   position: relative; }
+  .profile-card__name {
+    font-size: 3.4rem;
+    font-weight: 400;
+    width: 50%;
+    line-height: 4rem; }
   .profile-card__picture {
-    border: 2px solid red; }
+    margin-bottom: 2.5rem; }
   .profile-card__img {
     border-radius: 50%;
-    border: 5px solid white; }
+    border: 5px solid white;
+    width: 35%; }
   .profile-card__time-period {
     background-color: #1c1f4a;
     position: absolute;
@@ -46,3 +52,7 @@ body {
   .profile-card__time-period li {
     list-style: none;
     margin-bottom: 2.2rem; }
+
+small {
+  font-size: 1.5rem;
+  color: #bdc1ff; }
