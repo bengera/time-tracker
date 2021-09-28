@@ -66,7 +66,56 @@ body {
   font-size: 1.4rem;
   line-height: 1.6;
   overflow-x: hidden;
+  background-color: $color-very-dark-blue;
+
+  
+  
   
   
 
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: green;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.profile-card {
+  background-color: $color-blue;
+  padding: 5rem;
+  border-radius: 1.2rem;
+  position: relative;
+
+  &__picture {
+    border: 2px solid red;
+   
+  }
+
+  &__img {
+    border-radius: 50%;
+    border: 5px solid white;
+    
+  }
+
+  &__time-period {
+    background-color: $color-dark-blue;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 5rem;
+    margin-top:3rem;
+    z-index: -1;
+    border-radius: 1.2rem;
+    
+        
+  }
+
+  &__time-period li {
+    list-style: none;
+    margin-bottom: 2.2rem;
+  }
 }

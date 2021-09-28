@@ -14,4 +14,35 @@ body {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.6;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #0f1424; }
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff; }
+
+.profile-card {
+  background-color: #5847eb;
+  padding: 5rem;
+  border-radius: 1.2rem;
+  position: relative; }
+  .profile-card__picture {
+    border: 2px solid red; }
+  .profile-card__img {
+    border-radius: 50%;
+    border: 5px solid white; }
+  .profile-card__time-period {
+    background-color: #1c1f4a;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 5rem;
+    margin-top: 3rem;
+    z-index: -1;
+    border-radius: 1.2rem; }
+  .profile-card__time-period li {
+    list-style: none;
+    margin-bottom: 2.2rem; }
