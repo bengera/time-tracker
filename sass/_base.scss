@@ -5,11 +5,13 @@ $color-light-red: hsl(348, 100%, 68%);
 $color-lime-green: hsl(145, 58%, 55%);
 $color-violet: hsl(264, 64%, 52%);
 $color-soft-orange: hsl(43, 84%, 65%);
+$color-orange-dark: #ff8b64;
 
 // NEUTRAL COLORS
 $color-very-dark-blue: hsl(226, 43%, 10%);
 $color-dark-blue: hsl(235, 46%, 20%);
 $color-desaturated-blue: hsl(235, 45%, 61%);
+$color-desaturated-blue-hover: hsl(235, 45%, 41%);
 $color-pale-blue: hsl(236, 100%, 87%);
 
 // FONT VARIABLES
@@ -87,6 +89,20 @@ body {
 
 // cards
 
+.section-cards {
+  position: relative;
+}
+
+.top-card {
+  width: 25rem;
+  height: 7rem;
+  background-color: $color-orange-dark;
+  border-radius: 10px;
+  position: absolute;
+  top: -5rem;
+  z-index: -1;
+}
+
 .card {
   background-color: $color-dark-blue;
   height: 20rem;
@@ -94,19 +110,30 @@ body {
   border-radius: 1.2rem;
   display: grid;
   padding: 3rem;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 75% min-content;
+  grid-template-rows: 4rem 1fr 1fr;
+
+  &:hover{
+    background-color: $color-desaturated-blue-hover;
+  }
+
 
   
   &__title {
-    
+    grid-column: 1 / 1;  
   }
 
   &__time {
     font-size: 4.8rem;  
+    grid-column: 1 / 1;  
     
   }
 
   &__last-hours {
     color: $color-pale-blue;
+    grid-column: 1 / 1;  
   }
 }
 
@@ -118,6 +145,8 @@ button {
   border: 0;
   cursor: pointer;
   background-color: transparent;
+  grid-column: 2 / 2; 
+  grid-row: 1 / 1; 
 
   &:hover > .dot {
     background-color: #fff;
