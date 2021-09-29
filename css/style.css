@@ -24,13 +24,17 @@ body {
   min-height: 100vh;
   color: #fff; }
 
+.section-profile {
+  background-color: #1c1f4a;
+  border-radius: 1.2rem; }
+
 .profile-card {
   background-color: #5847eb;
   border-radius: 1.2rem;
-  position: relative;
   padding: 3rem;
   width: 26rem;
-  height: 35rem; }
+  height: 35rem;
+  z-index: 5; }
   .profile-card__name {
     font-size: 3.4rem;
     font-weight: 400;
@@ -44,12 +48,7 @@ body {
     width: 45%; }
   .profile-card__time-period {
     background-color: #1c1f4a;
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 20rem;
-    margin-top: 3rem;
-    z-index: -1;
+    height: 15rem;
     border-radius: 1.2rem;
     display: flex;
     flex-direction: column; }
@@ -58,14 +57,17 @@ body {
     margin-bottom: 2.2rem;
     display: flex;
     flex-direction: column;
-    margin-top: 9rem;
+    margin-top: 2.6rem;
     margin-left: 2rem; }
   .profile-card__list-item:not(:first-child) {
     margin-top: 1rem; }
   .profile-card__link:link, .profile-card__link:visited {
-    color: #fff;
+    font-size: 1.4rem;
+    color: #bdc1ff;
     text-decoration: none;
     cursor: pointer; }
+  .profile-card__link:hover {
+    color: #fff; }
 
 small {
   font-size: 1.5rem;

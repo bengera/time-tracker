@@ -84,15 +84,22 @@ body {
   color: #fff;
 }
 
+
+.section-profile {
+  background-color: $color-dark-blue;
+  border-radius: 1.2rem;
+}
+
+
 .profile-card {
   background-color: $color-blue;
   // padding: 5rem;
   border-radius: 1.2rem;
-  position: relative;
   // width: 25rem;
   padding: 3rem;
   width: 26rem;
   height: 35rem;
+  z-index: 5;
   
   
   
@@ -120,20 +127,13 @@ body {
 
   &__time-period {
     background-color: $color-dark-blue;
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 20rem;
-    margin-top: 3rem;
-    z-index: -1;
+    height: 15rem;
     border-radius: 1.2rem;
     display: flex;
     flex-direction: column;
     
-
-
-
-
+    
+    
   }
 
   &__list {
@@ -141,7 +141,7 @@ body {
     margin-bottom: 2.2rem;
     display: flex;
     flex-direction: column; 
-    margin-top: 9rem;
+    margin-top: 2.6rem;
     margin-left: 2rem;
     
 
@@ -160,10 +160,15 @@ body {
     
     &:link,
     &:visited {
-      
-      color: #fff;
+      font-size: 1.4rem;
+      color: $color-pale-blue;
       text-decoration: none;
       cursor: pointer;
+    }
+
+    &:hover
+     {
+      color: #fff;
     }
   }
 
