@@ -1,0 +1,96 @@
+.section-profile {
+    background-color: $color-dark-blue;
+    border-radius: 1.2rem;
+  }
+  
+  
+  .profile-card {
+    background-color: $color-blue;
+    // padding: 5rem;
+    border-radius: 1.2rem;
+    // width: 25rem;
+    padding: 3rem;
+    width: 26rem;
+    height: 35rem;
+    z-index: 5;
+    
+    
+    
+  
+    &__name {
+      font-size: 3.4rem;
+      font-weight: 400;
+      width: 50%;
+      line-height: 4rem;
+    }
+  
+  
+  
+    &__picture {
+      margin-bottom: 2.5rem;
+  
+    }
+  
+    &__img {
+      border-radius: 50%;
+      border: 2px solid white;
+      width: 45%;
+  
+    }
+  
+    &__time-period {
+      background-color: $color-dark-blue;
+      height: 15rem;
+      border-radius: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      
+      
+      
+    }
+  
+    &__list {
+      list-style: none;
+      margin-bottom: 2.2rem;
+      display: flex;
+      flex-direction: column; 
+      margin-top: 2.6rem;
+      margin-left: 2rem;
+      
+  
+      
+    }
+  
+    &__list-item:not(:first-child) {
+      margin-top: 1rem;
+  
+      
+    }
+  
+  
+    &__link {
+      
+      
+      &:link,
+      &:visited {
+        font-size: 1.4rem;
+        color: $color-pale-blue;
+        text-decoration: none;
+        cursor: pointer;
+      }
+  
+      &:hover
+       {
+        color: #fff;
+      }
+    }
+  
+  
+  
+  
+  }
+  
+  small {
+    font-size: 1.5rem;
+    color: $color-pale-blue;
+  }

@@ -24,6 +24,34 @@ body {
   min-height: 100vh;
   color: #fff; }
 
+.card {
+  background-color: #1c1f4a;
+  height: 20rem;
+  width: 25rem;
+  border-radius: 1.2rem;
+  display: grid;
+  padding: 3rem; }
+  .card__time {
+    font-size: 4.8rem; }
+  .card__last-hours {
+    color: #bdc1ff; }
+
+button {
+  width: 50px;
+  height: 20px;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent; }
+  button:hover > .dot {
+    background-color: #fff; }
+
+.dot {
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #bdc1ff; }
+
 .section-profile {
   background-color: #1c1f4a;
   border-radius: 1.2rem; }

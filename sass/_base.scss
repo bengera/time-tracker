@@ -85,134 +85,54 @@ body {
 }
 
 
-.section-profile {
+// cards
+
+.card {
   background-color: $color-dark-blue;
+  height: 20rem;
+  width: 25rem;
   border-radius: 1.2rem;
-}
-
-
-.profile-card {
-  background-color: $color-blue;
-  // padding: 5rem;
-  border-radius: 1.2rem;
-  // width: 25rem;
+  display: grid;
   padding: 3rem;
-  width: 26rem;
-  height: 35rem;
-  z-index: 5;
+
   
-  
-  
-
-  &__name {
-    font-size: 3.4rem;
-    font-weight: 400;
-    width: 50%;
-    line-height: 4rem;
-  }
-
-
-
-  &__picture {
-    margin-bottom: 2.5rem;
-
-  }
-
-  &__img {
-    border-radius: 50%;
-    border: 2px solid white;
-    width: 45%;
-
-  }
-
-  &__time-period {
-    background-color: $color-dark-blue;
-    height: 15rem;
-    border-radius: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    
-    
+  &__title {
     
   }
 
-  &__list {
-    list-style: none;
-    margin-bottom: 2.2rem;
-    display: flex;
-    flex-direction: column; 
-    margin-top: 2.6rem;
-    margin-left: 2rem;
-    
-
+  &__time {
+    font-size: 4.8rem;  
     
   }
 
-  &__list-item:not(:first-child) {
-    margin-top: 1rem;
-
-    
+  &__last-hours {
+    color: $color-pale-blue;
   }
-
-
-  &__link {
-    
-    
-    &:link,
-    &:visited {
-      font-size: 1.4rem;
-      color: $color-pale-blue;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    &:hover
-     {
-      color: #fff;
-    }
-  }
-
-
-
-  // &__time-period ul {
-  //   list-style: none;
-  //   margin-bottom: 2.2rem;
-  //   display: flex;
-  //   flex-direction: column; 
-  //   margin-top: 4.5rem;
-  //   margin-left: 2rem;
-
-
-
-
-
-  // }
-
-  // &__time-period li {
-  //   padding: .5rem;
-
-
-
-  // }
-
-
-
-
-
 }
 
+//3 DOTTED BUTTON
+
+button {
+  width: 50px;
+  height: 20px;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+
+  &:hover > .dot {
+    background-color: #fff;
+  }
+   
+}
+
+.dot {
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: $color-pale-blue;
+
+  
 
 
-
-
-
-
-
-
-
-
-
-small {
-  font-size: 1.5rem;
-  color: $color-pale-blue;
 }
