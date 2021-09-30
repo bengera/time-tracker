@@ -77,43 +77,84 @@ body {
 
 }
 
+// - Mobile: 375px
+// - Desktop: 1440px
+
 .main-container {
 
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: min-content min-content 1fr 1fr 1fr;
-
-
-  // display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  // background-color: green;
   min-height: 100vh;
+  min-width: 100vw;
   color: #fff;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  
 }
 
 
 // cards
 
-.section-cards {
+.card-work,.card-play,.card-study,.card-exercise,.card-social,.card-selfcare {
   position: relative;
-  grid-column: 2/ -1;
-  grid-row: 1 / 1;
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  // grid-column: 2/ 3;
+  // grid-row: 1 / 1;
  
 }
 
-.top-card {
-  background-image: url('../images/icon-work.svg');
+
+
+.top-card-work,.top-card-play,.top-card-study,.top-card-exercise,.top-card-social,.top-card-selfcare {
+  // background-image: url('../images/icon-work.svg');
   background-repeat: no-repeat;
   background-position: right top; 
   width: 25rem;
   height: 7rem;
-  background-color: $color-orange-dark;
+  // background-color: $color-orange-dark;
   border-radius: 10px;
   position: absolute;
   top: -5rem;
   z-index: -1;
 }
+
+.top-card-work{
+  background-image: url('../images/icon-work.svg');
+  background-color: $color-orange-dark;
+}
+
+.top-card-play{
+  background-image: url('../images/icon-play.svg');
+  background-color: $color-soft-blue;
+}
+
+.top-card-study{
+  background-image: url('../images/icon-study.svg');
+  background-color: $color-light-red;
+}
+
+.top-card-exercise{
+  background-image: url('../images/icon-exercise.svg');
+  background-color: $color-lime-green;
+}
+
+.top-card-social{
+  background-image: url('../images/icon-social.svg');
+  background-color: $color-violet;
+}
+
+.top-card-selfcare{
+  background-image: url('../images/icon-self-care.svg');
+  background-color: $color-soft-orange;
+}
+
 
 .card {
   background-color: $color-dark-blue;
