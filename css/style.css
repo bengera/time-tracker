@@ -332,7 +332,8 @@ body {
 
 .content-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
   grid-gap: 5px; }
 
 .card-work, .card-play, .card-study, .card-exercise, .card-social, .card-selfcare {
@@ -419,7 +420,9 @@ button {
   background-color: #1c1f4a;
   border-radius: 1.2rem;
   grid-row: 1 / -1;
-  grid-column: 1 / 1; }
+  grid-column: 1 / 1;
+  width: 26rem;
+  height: calc(100% - 2rem); }
 
 .profile-card {
   background-color: #5847eb;
@@ -451,11 +454,11 @@ button {
     display: flex;
     flex-direction: column;
     margin-top: 2.6rem;
-    margin-left: 2rem; }
+    margin-left: 2.5rem; }
   .profile-card__list-item:not(:first-child) {
     margin-top: 1rem; }
   .profile-card__link:link, .profile-card__link:visited {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #bdc1ff;
     text-decoration: none;
     cursor: pointer; }
