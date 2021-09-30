@@ -78,7 +78,13 @@ body {
 }
 
 .main-container {
-  display: flex;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: min-content min-content 1fr 1fr 1fr;
+
+
+  // display: flex;
   justify-content: center;
   align-items: center;
   // background-color: green;
@@ -91,9 +97,15 @@ body {
 
 .section-cards {
   position: relative;
+  grid-column: 2/ -1;
+  grid-row: 1 / 1;
+ 
 }
 
 .top-card {
+  background-image: url('../images/icon-work.svg');
+  background-repeat: no-repeat;
+  background-position: right top; 
   width: 25rem;
   height: 7rem;
   background-color: $color-orange-dark;
@@ -136,6 +148,7 @@ body {
     grid-column: 1 / 1;  
   }
 }
+
 
 //3 DOTTED BUTTON
 
