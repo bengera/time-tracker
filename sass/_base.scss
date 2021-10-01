@@ -92,6 +92,14 @@ body {
   @media only screen and (max-width: $bp-larger) {
     padding: 3rem;
   }
+
+  @media only screen and (max-width: $bp-medium) {
+    display: block;
+    min-height: 0;
+    min-width: 0;
+  }
+
+  
 }
 
 .content-container {
@@ -103,6 +111,10 @@ body {
   @media only screen and (max-width: $bp-larger) {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: repeat(1, 1fr);
   }
   
 }
