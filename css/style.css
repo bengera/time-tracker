@@ -329,18 +329,27 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   color: #fff; }
+  @media only screen and (max-width: 75em) {
+    .main-container {
+      padding: 3rem; } }
 
 .content-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
   grid-gap: 5px; }
+  @media only screen and (max-width: 75em) {
+    .content-container {
+      grid-template-columns: repeat(2, 1fr); } }
 
 .card-work, .card-play, .card-study, .card-exercise, .card-social, .card-selfcare {
   position: relative;
   margin-top: 5rem;
   margin-left: 2rem;
   margin-bottom: 2rem; }
+  @media only screen and (max-width: 75em) {
+    .card-work, .card-play, .card-study, .card-exercise, .card-social, .card-selfcare {
+      width: auto; } }
 
 .top-card-work, .top-card-play, .top-card-study, .top-card-exercise, .top-card-social, .top-card-selfcare {
   background-repeat: no-repeat;
@@ -351,6 +360,9 @@ body {
   position: absolute;
   top: -5rem;
   z-index: -1; }
+  @media only screen and (max-width: 75em) {
+    .top-card-work, .top-card-play, .top-card-study, .top-card-exercise, .top-card-social, .top-card-selfcare {
+      width: 100%; } }
 
 .top-card-work {
   background-image: url("../images/icon-work.svg");
@@ -387,6 +399,10 @@ body {
   display: grid;
   grid-template-columns: 75% min-content;
   grid-template-rows: 4rem 1fr 1fr; }
+  @media only screen and (max-width: 75em) {
+    .card {
+      width: 100%;
+      grid-template-columns: 2fr 1fr; } }
   .card:hover {
     background-color: #3a4198; }
   .card__title {
@@ -397,6 +413,9 @@ body {
   .card__last-hours {
     color: #bdc1ff;
     grid-column: 1 / 1; }
+    @media only screen and (max-width: 75em) {
+      .card__last-hours {
+        grid-column: 2 / 3; } }
 
 button {
   width: 50px;
@@ -406,6 +425,9 @@ button {
   background-color: transparent;
   grid-column: 2 / 2;
   grid-row: 1 / 1; }
+  @media only screen and (max-width: 75em) {
+    button {
+      margin-left: 7rem; } }
   button:hover > .dot {
     background-color: #fff; }
 
@@ -423,6 +445,11 @@ button {
   grid-column: 1 / 1;
   width: 26rem;
   height: calc(100% - 2rem); }
+  @media only screen and (max-width: 75em) {
+    .section-profile {
+      grid-column: 1 / -1;
+      width: 0;
+      width: 100%; } }
 
 .profile-card {
   background-color: #5847eb;
@@ -431,23 +458,42 @@ button {
   width: 26rem;
   height: 35rem;
   z-index: 5; }
+  @media only screen and (max-width: 75em) {
+    .profile-card {
+      height: 13rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 100%; } }
   .profile-card__name {
     font-size: 3.4rem;
     font-weight: 400;
     width: 50%;
     line-height: 4rem; }
+    @media only screen and (max-width: 75em) {
+      .profile-card__name {
+        grid-column: 2 /3;
+        grid-row: 1 /1;
+        width: 30rem; } }
   .profile-card__picture {
     margin-bottom: 2.5rem; }
   .profile-card__img {
     border-radius: 50%;
     border: 2px solid white;
     width: 45%; }
+    @media only screen and (max-width: 75em) {
+      .profile-card__img {
+        width: 8rem; } }
   .profile-card__time-period {
     background-color: #1c1f4a;
     height: 15rem;
     border-radius: 1.2rem;
     display: flex;
     flex-direction: column; }
+    @media only screen and (max-width: 75em) {
+      .profile-card__time-period {
+        width: 100%;
+        height: 7rem;
+        margin-bottom: 1.3rem; } }
   .profile-card__list {
     list-style: none;
     margin-bottom: 2.2rem;
@@ -455,8 +501,15 @@ button {
     flex-direction: column;
     margin-top: 2.6rem;
     margin-left: 2.5rem; }
+    @media only screen and (max-width: 75em) {
+      .profile-card__list {
+        flex-direction: row;
+        justify-content: space-around; } }
   .profile-card__list-item:not(:first-child) {
     margin-top: 1rem; }
+    @media only screen and (max-width: 75em) {
+      .profile-card__list-item:not(:first-child) {
+        margin-top: 0; } }
   .profile-card__link:link, .profile-card__link:visited {
     font-size: 1.6rem;
     color: #bdc1ff;
@@ -468,3 +521,11 @@ button {
 small {
   font-size: 1.5rem;
   color: #bdc1ff; }
+  @media only screen and (max-width: 75em) {
+    small {
+      grid-row: 1 / 1;
+      grid-column: 2 / 3; } }
+
+@media only screen and (max-width: 75em) {
+  small, h1 {
+    margin-left: 10rem; } }

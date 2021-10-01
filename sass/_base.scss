@@ -88,6 +88,10 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   color: #fff;
+
+  @media only screen and (max-width: $bp-larger) {
+    padding: 3rem;
+  }
 }
 
 .content-container {
@@ -95,6 +99,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
   grid-gap: 5px;
+
+  @media only screen and (max-width: $bp-larger) {
+    grid-template-columns: repeat(2, 1fr);
+  }
   
 }
 
@@ -106,8 +114,12 @@ body {
   margin-top: 5rem;
   margin-left: 2rem;
   margin-bottom: 2rem;
-  // grid-column: 2/ 3;
-  // grid-row: 1 / 1;
+
+  @media only screen and (max-width: $bp-larger) {
+    width: auto;
+  }
+  
+  
  
 }
 
@@ -124,6 +136,10 @@ body {
   position: absolute;
   top: -5rem;
   z-index: -1;
+
+  @media only screen and (max-width: $bp-larger) {
+    width: 100%;  
+  }
 }
 
 .top-card-work{
@@ -169,6 +185,11 @@ body {
   grid-template-columns: 75% min-content;
   grid-template-rows: 4rem 1fr 1fr;
 
+  @media only screen and (max-width: $bp-larger) {
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+  }
+
   &:hover{
     background-color: $color-desaturated-blue-hover;
   }
@@ -187,7 +208,11 @@ body {
 
   &__last-hours {
     color: $color-pale-blue;
-    grid-column: 1 / 1;  
+    grid-column: 1 / 1; 
+    
+    @media only screen and (max-width: $bp-larger) {
+      grid-column: 2 / 3;
+    }
   }
 }
 
@@ -202,6 +227,10 @@ button {
   background-color: transparent;
   grid-column: 2 / 2; 
   grid-row: 1 / 1; 
+
+  @media only screen and (max-width: $bp-larger) {
+    margin-left: 7rem;
+  }
 
   &:hover > .dot {
     background-color: #fff;
