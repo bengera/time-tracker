@@ -230,6 +230,10 @@ body {
     @media only screen and (max-width: $bp-larger) {
       grid-column: 2 / 3;
     }
+
+    @media only screen and (max-width: $bp-medium) {
+      text-align: right;  
+    }
   }
 }
 
@@ -248,6 +252,11 @@ button {
 
   @media only screen and (max-width: $bp-larger) {
     margin-left: 7rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    text-align: right;
+    width: auto;
   }
 
   &:hover > .dot {
