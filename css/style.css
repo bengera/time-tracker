@@ -340,7 +340,8 @@ body {
   grid-gap: 5px; }
   @media only screen and (max-width: 75em) {
     .content-container {
-      grid-template-columns: repeat(2, 1fr); } }
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem; } }
 
 .card-work, .card-play, .card-study, .card-exercise, .card-social, .card-selfcare {
   position: relative;
@@ -349,7 +350,8 @@ body {
   margin-bottom: 2rem; }
   @media only screen and (max-width: 75em) {
     .card-work, .card-play, .card-study, .card-exercise, .card-social, .card-selfcare {
-      width: auto; } }
+      width: auto;
+      margin-left: 0; } }
 
 .top-card-work, .top-card-play, .top-card-study, .top-card-exercise, .top-card-social, .top-card-selfcare {
   background-repeat: no-repeat;
