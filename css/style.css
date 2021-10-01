@@ -336,7 +336,8 @@ body {
     .main-container {
       display: block;
       min-height: 0;
-      min-width: 0; } }
+      min-width: 0;
+      padding: 1rem; } }
 
 .content-container {
   display: grid;
