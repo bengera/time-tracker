@@ -91,6 +91,7 @@
       flex-direction: column; 
       margin-top: 2.6rem;
       margin-left: 2.5rem;
+      
 
       @media only screen and (max-width: $bp-larger) {
         flex-direction: row;
@@ -122,6 +123,7 @@
         color: $color-pale-blue;
         text-decoration: none;
         cursor: pointer;
+        transition: 0.3s ease;
       }
   
       &:hover

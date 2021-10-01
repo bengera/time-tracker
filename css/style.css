@@ -370,7 +370,8 @@ body {
   border-radius: 10px;
   position: absolute;
   top: -5rem;
-  z-index: -1; }
+  z-index: -1;
+  transition: 0.3s ease; }
   @media only screen and (max-width: 75em) {
     .top-card-work, .top-card-play, .top-card-study, .top-card-exercise, .top-card-social, .top-card-selfcare {
       width: 100%; } }
@@ -409,7 +410,8 @@ body {
   cursor: pointer;
   display: grid;
   grid-template-columns: 75% min-content;
-  grid-template-rows: 4rem 1fr 1fr; }
+  grid-template-rows: 4rem 1fr 1fr;
+  transition: 0.3s ease; }
   @media only screen and (max-width: 75em) {
     .card {
       width: 100%;
@@ -435,7 +437,8 @@ button {
   cursor: pointer;
   background-color: transparent;
   grid-column: 2 / 2;
-  grid-row: 1 / 1; }
+  grid-row: 1 / 1;
+  transition: 0.3s ease; }
   @media only screen and (max-width: 75em) {
     button {
       margin-left: 7rem; } }
@@ -525,7 +528,8 @@ button {
     font-size: 1.6rem;
     color: #bdc1ff;
     text-decoration: none;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 0.3s ease; }
   .profile-card__link:hover {
     color: #fff; }
 
