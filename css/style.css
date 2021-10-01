@@ -428,7 +428,9 @@ body {
     grid-column: 1 / 1; }
     @media only screen and (max-width: 75em) {
       .card__last-hours {
-        grid-column: 2 / 3; } }
+        grid-column: 2 / 3;
+        align-self: center;
+        margin-top: 2.6rem; } }
     @media only screen and (max-width: 50em) {
       .card__last-hours {
         text-align: right; } }
