@@ -350,7 +350,8 @@ body {
       grid-gap: 2rem; } }
   @media only screen and (max-width: 50em) {
     .content-container {
-      grid-template-columns: repeat(1, 1fr); } }
+      grid-template-columns: repeat(1, 1fr);
+      padding: 1rem; } }
 
 .card-work, .card-play, .card-study, .card-exercise, .card-social, .card-selfcare {
   position: relative;

@@ -15,205 +15,196 @@
   <title>Frontend Mentor | Time tracking dashboard || Ben Geraghty</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+ 
 </head>
 
 <body>
 
   <main class="main-container">
     <div class="content-container">
-    <section class="section-profile">
-      <div class="profile-card">
+      <section class="section-profile">
+        <div class="profile-card">
 
-        <div class="profile-card__picture">
-          <img src="images/image-jeremy.png" alt="profile-picture" class="profile-card__img">
+          <div class="profile-card__picture">
+            <img src="images/image-jeremy.png" alt="profile-picture" class="profile-card__img">
+          </div>
+          <small>Report for</small>
+          <h1 class="profile-card__name">
+            Jeremy Robson
+          </h1>
+
         </div>
-        <small>Report for</small>
-        <h1 class="profile-card__name">
-          Jeremy Robson
-        </h1>
 
+        <div class="profile-card__time-period">
+
+          <ul class="profile-card__list">
+            <li class="profile-card__list-item"><a href="#" class="profile-card__link">Daily</a></li>
+            <li class="profile-card__list-item"><a href="#" class="profile-card__link">Weekly</a></li>
+            <li class="profile-card__list-item"><a href="#" class="profile-card__link">Monthly</a></li>
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!--CARD WORK-->
+      <div class="card-work">
+
+        <div class="top-card-work">
+        </div>
+        <div class="card">
+
+          <p class="card__title">
+            Work
+          </p>
+          <p class="card__time">
+            32hrs
+          </p>
+
+          <p class="card__last-hours">
+            Last Week - 36hrs
+          </p>
+          <button>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </button>
+        </div>
       </div>
+      <!--CARD WORK END-->
 
-      <div class="profile-card__time-period">
+      <!--CARD PLAY-->
+      <div class="card-play">
 
-        <ul class="profile-card__list">
-          <li class="profile-card__list-item"><a href="#" class="profile-card__link">Daily</a></li>
-          <li class="profile-card__list-item"><a href="#" class="profile-card__link">Weekly</a></li>
-          <li class="profile-card__list-item"><a href="#" class="profile-card__link">Monthly</a></li>
-        </ul>
+        <div class="top-card-play">
+        </div>
+        <div class="card">
 
+          <p class="card__title">
+            Play
+          </p>
+          <p class="card__time">
+            10hrs
+          </p>
+
+          <p class="card__last-hours">
+            Last Week - 8hrs
+          </p>
+          <button>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </button>
+        </div>
       </div>
-    </section>
-    
+      <!--CARD PLAY END-->
 
-    <!--CARD WORK-->
-    <div class="card-work">
+      <!--CARD PLAY-->
+      <div class="card-study">
 
-      <div class="top-card-work">
+        <div class="top-card-study">
+        </div>
+        <div class="card">
+
+          <p class="card__title">
+            Study
+          </p>
+          <p class="card__time">
+            10hrs
+          </p>
+
+          <p class="card__last-hours">
+            Last Week - 8hrs
+          </p>
+          <button>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </button>
+        </div>
       </div>
-      <div class="card">
+      <!--CARD PLAY END-->
 
-        <p class="card__title">
-          Work
-        </p>
-        <p class="card__time">
-          32hrs
-        </p>
+      <!--CARD PLAY-->
+      <div class="card-exercise">
 
-        <p class="card__last-hours">
-          Last Week - 36hrs
-        </p>
-        <button>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </button>
+        <div class="top-card-exercise">
+        </div>
+        <div class="card">
+
+          <p class="card__title">
+            Exercise
+          </p>
+          <p class="card__time">
+            10hrs
+          </p>
+
+          <p class="card__last-hours">
+            Last Week - 8hrs
+          </p>
+          <button>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </button>
+        </div>
       </div>
+      <!--CARD PLAY END-->
+
+      <!--CARD PLAY-->
+      <div class="card-social">
+
+        <div class="top-card-social">
+        </div>
+        <div class="card">
+
+          <p class="card__title">
+            Social
+          </p>
+          <p class="card__time">
+            10hrs
+          </p>
+
+          <p class="card__last-hours">
+            Last Week - 8hrs
+          </p>
+          <button>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </button>
+        </div>
+      </div>
+      <!--CARD PLAY END-->
+
+      <!--CARD PLAY-->
+      <div class="card-selfcare">
+
+        <div class="top-card-selfcare">
+        </div>
+        <div class="card">
+
+          <p class="card__title">
+            Self Care
+          </p>
+          <p class="card__time">
+            10hrs
+          </p>
+
+          <p class="card__last-hours">
+            Last Week - 8hrs
+          </p>
+          <button>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </button>
+        </div>
+      </div>
+      <!--CARD PLAY END-->
+
+
     </div>
-    <!--CARD WORK END-->
-
-        <!--CARD PLAY-->
-        <div class="card-play">
-
-          <div class="top-card-play">
-          </div>
-          <div class="card">
-    
-            <p class="card__title">
-              Play
-            </p>
-            <p class="card__time">
-              10hrs
-            </p>
-    
-            <p class="card__last-hours">
-              Last Week - 8hrs
-            </p>
-            <button>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-            </button>
-          </div>
-        </div>
-        <!--CARD PLAY END-->
-
-          <!--CARD PLAY-->
-          <div class="card-study">
-
-            <div class="top-card-study">
-            </div>
-            <div class="card">
-      
-              <p class="card__title">
-                Study
-              </p>
-              <p class="card__time">
-                10hrs
-              </p>
-      
-              <p class="card__last-hours">
-                Last Week - 8hrs
-              </p>
-              <button>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </button>
-            </div>
-          </div>
-          <!--CARD PLAY END-->
-
-           <!--CARD PLAY-->
-           <div class="card-exercise">
-
-            <div class="top-card-exercise">
-            </div>
-            <div class="card">
-      
-              <p class="card__title">
-                Exercise
-              </p>
-              <p class="card__time">
-                10hrs
-              </p>
-      
-              <p class="card__last-hours">
-                Last Week - 8hrs
-              </p>
-              <button>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </button>
-            </div>
-          </div>
-          <!--CARD PLAY END-->
-
-          <!--CARD PLAY-->
-          <div class="card-social">
-
-            <div class="top-card-social">
-            </div>
-            <div class="card">
-      
-              <p class="card__title">
-                Social
-              </p>
-              <p class="card__time">
-                10hrs
-              </p>
-      
-              <p class="card__last-hours">
-                Last Week - 8hrs
-              </p>
-              <button>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </button>
-            </div>
-          </div>
-          <!--CARD PLAY END-->
-
-           <!--CARD PLAY-->
-           <div class="card-selfcare">
-
-            <div class="top-card-selfcare">
-            </div>
-            <div class="card">
-      
-              <p class="card__title">
-                Self Care
-              </p>
-              <p class="card__time">
-                10hrs
-              </p>
-      
-              <p class="card__last-hours">
-                Last Week - 8hrs
-              </p>
-              <button>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </button>
-            </div>
-          </div>
-          <!--CARD PLAY END-->
-
-        
-      </div>
   </main>
 
 
